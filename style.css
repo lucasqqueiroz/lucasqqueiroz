@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f3f4f6;
+}
+
+.container {
+    display: flex;
+    max-width: 1000px; 
+    width: 90%; 
+    background-color: #ffffff; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.form-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #ccc; 
+    border-radius: 8px; 
+}
+
+.form-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.form {
+    flex: 2;
+    padding: 20px;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title h1 {
+    font-size: 24px;
+    color: #333333;
+}
+
+.login-button button {
+    background-color: #1e90ff;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 25px; 
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.login-button button:hover {
+    background-color: #1c86ee;
+}
+
+.input-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box label {
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+.input-box input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.input-box input[type="tel"] {
+    max-width: 200px;  
+    width: 100%;  
+}
+
+.gender-inputs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.gender-title h6 {
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.gender-group {
+    display: flex;
+    gap: 10px;
+}
+
+.gender-input {
+    display: flex;
+    align-items: center;
+}
+
+.gender-input input[type="radio"] {
+    margin-right: 5px;
+}
+
+.continue-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.continue-button button {
+    background-color: #1e90ff;
+    color: #ffffff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px; 
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.continue-button button:hover {
+    background-color: #1c86ee;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .form-image {
+        display: none;
+    }
+
+    .form {
+        padding: 10px;
+    }
+
+    .input-group {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.footer-bar {
+    width: 100%;
+    height: 40px;
+    background-color: #1e90ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 60px; /* Aumente o valor para mais espaço */
+    border-radius: 25px; /* Deixa as bordas mais arredondadas */
+}
+
